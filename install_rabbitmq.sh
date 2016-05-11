@@ -8,4 +8,4 @@ sudo apt-key add rabbitmq-signing-key-public.asc
 echo "deb http://www.rabbitmq.com/debian/ testing main" | sudo tee -a /etc/apt/sources.list.d/rabbitmq.list
 
 # update the package lists and install rabbitmq
-sudo apt-get update && sudo apt-get -y install rabbitmq-server
+sudo apt-get update && sudo apt-get install -y rabbitmq-server
