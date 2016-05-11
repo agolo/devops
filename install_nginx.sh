@@ -9,7 +9,7 @@ echo "deb http://nginx.org/packages/ubuntu/ trusty nginx" | sudo tee -a /etc/apt
 echo "deb-src http://nginx.org/packages/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list.d/nginx.list
 
 # update the package lists and install nginx
-sudo apt-get update && sudo apt-get install -y nginx
+sudo apt-get update && sudo apt-get install -y nginx apache2-utils
 
 # create sites-available and sites-enabled folders
 sudo mkdir /etc/nginx/sites-available
