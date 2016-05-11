@@ -9,3 +9,9 @@ echo "deb http://www.rabbitmq.com/debian/ testing main" | sudo tee -a /etc/apt/s
 
 # update the package lists and install rabbitmq
 sudo apt-get update && sudo apt-get install -y rabbitmq-server
+
+# enable HTTP management GUI
+sudo rabbitmq-plugins enable rabbitmq_management
+
+# start the rabbitmq server
+sudo service rabbitmq-server restart

@@ -12,3 +12,5 @@ echo "deb http://packages.elastic.co/elasticsearch/2.x/debian stable main" | sud
 
 # update the package lists and install elasticsearch
 sudo apt-get update && sudo apt-get install -y elasticsearch
+
+sudo service elasticsearch restart

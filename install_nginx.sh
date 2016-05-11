@@ -17,3 +17,5 @@ sudo mkdir /etc/nginx/sites-enabled
 
 # include all files in sites-enabled in the nginx config
 echo "include /etc/nginx/sites-enabled/*;" | sudo tee -a /etc/nginx/conf.d/sites-enabled.conf
+
+sudo service nginx restart
