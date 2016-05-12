@@ -10,4 +10,4 @@ sudo apt-get install -y build-essential git wget htop multitail httpie tree jq
 git clone https://github.com/oxymor0n/devops.git /devops
 
 # make devops writable for all users
-chmod 777 /devops
+chmod -R 777 /devops
