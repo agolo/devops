@@ -13,5 +13,9 @@ sudo apt-get update && sudo apt-get install -y rabbitmq-server
 # enable HTTP management GUI
 sudo rabbitmq-plugins enable rabbitmq_management
 
+# install production settings
+sudo cp rabbitmq_configs/rabbitmq.config /etc/rabbitmq/rabbitmq.config
+sudo cp rabbitmq_configs/rabbitmq-server /etc/default/rabbitmq-server
+
 # start the rabbitmq server
 sudo service rabbitmq-server restart
