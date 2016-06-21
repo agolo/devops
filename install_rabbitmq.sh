@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # download the public key to the rabbitmq repository and add it to apt
-wget https://www.rabbitmq.com/rabbitmq-signing-key-public.asc
-sudo apt-key add rabbitmq-signing-key-public.asc
+wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
+sudo apt-key add rabbitmq-release-signing-key.asc
 
 # add the rabbitmq repository to the sources list
 echo "deb http://www.rabbitmq.com/debian/ testing main" | sudo tee -a /etc/apt/sources.list.d/rabbitmq.list
